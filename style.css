@@ -1,0 +1,73 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	overflow-x:hidden;
+	font-family: "Roboto"
+}
+body{
+	background-color: rgb(17,17,27);
+	
+}
+.header{
+	display:flex;
+	justify-content: center;
+}
+.projects{
+	margin-top:5vh;
+display:flex;
+gap:55px;
+align-items: center;
+}
+
+
+.main{
+/* background-color: red; */
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	min-height: 50vh;
+	max-height: 50vh;
+	min-width: 60vw;
+	margin: 15vh 20vw;	
+	border-radius: 15px;
+	box-shadow: 0 0 10px 0px #94e2d5;
+	}
+.main-text{
+	color: #94e2d5;
+	font-size: 3.2vw;
+}
+.main-text>p{
+	margin-left:30px;
+	margin-top:10px;
+	font-size:1.5vw;
+}
+.main-img {
+}
+
+
+.doggo {
+	border-radius:50%;
+	max-width:15vw;
+	border:2px solid  #94e2d5;
+}
+.footer{
+	display:flex;
+	justify-content: center;
+}
+.social{
+	margin-top: 5vh;
+display:flex;
+gap:55px;
+align-items: center;
+}
+.projects>a{
+	text-decoration: none;
+	font-size:2.0vh;
+	color: #94e2d5;
+
+}
+.logo{
+	width:5vw;
+	height:5vh;
+
