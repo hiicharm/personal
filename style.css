@@ -172,6 +172,11 @@ footer {
 		width: 6vw;
 		height: 3vh;
 	}
+
+	.social-container {
+		display: flex;
+		gap: 4vh;
+	}
 }
 
 /* Additional adjustments for very small screens */
@@ -195,5 +200,10 @@ footer {
 
 	.tagline {
 		font-size: 2.5vw;
+	}
+
+	.social-container {
+		display: flex;
+		gap: 4vh;
 	}
 }
