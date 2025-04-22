@@ -132,9 +132,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-	html {
-		overflow-y: hidden;
-	}
 
 	.projects {
 		font-size: 3vw;
