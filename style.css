@@ -132,6 +132,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+	html {
+		overflow-y: hidden;
+	}
+
 	.projects {
 		font-size: 3vw;
 	}
@@ -173,7 +177,7 @@ footer {
 /* Additional adjustments for very small screens */
 @media (max-width: 480px) {
 	html {
-		overflow-y: auto;
+		overflow-y: hidden;
 	}
 
 	.main-card {
