@@ -1,52 +1,76 @@
 * {
 	box-sizing: border-box;
-	padding: 0;
 	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+:root {
+	--bg-color: #0c101c;
+	--text-color: #e0e4f0;
+	--accent-color: #94e2d5;
+	--hover-color: #ffffff;
+	--glow-color: #4f9fff;
+}
+
+html {
 	overflow-y: hidden;
-	font-family: "Roboto"
 }
 
 body {
-	background-color: #0c101c;
-	color: #e0e4f0;
+	background-color: var(--bg-color);
+	color: var(--text-color);
 }
 
-.header {
-	display: flex;
-	justify-content: center;
-}
-
-.projects {
-	margin-top: 8vh;
-	display: flex;
-	gap: 55px;
-}
-
-.projects>a {
-	/* text-decoration: none; */
-	/* font-size: 2.0vw; */
-	/* color: #94e2d5; */
-
-	color: #5ce1e6;
+a {
+	color: var(--accent-color);
 	text-decoration: none;
 	transition: color 0.2s ease;
-	overflow-x: hidden;
 }
 
 a:hover {
-	color: #ffffff;
-	text-shadow: 0 0 8px #4f9fff;
+	color: var(--hover-color);
+	text-shadow: 0 0 8px var(--glow-color);
 }
 
-.main {
-	/* background-color: red; */
+/* Header styles */
+.header {
+	height: 15vh;
+	width: 100%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
-	min-height: 50vh;
-	max-height: 50vh;
-	min-width: 60vw;
-	margin: 15vh 20vw 10vh 20vw;
+}
+
+.projects-container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.projects {
+	display: flex;
+	gap: 4vw;
+	font-size: 1.6vw;
+}
+
+/* Main section styles */
+main {
+	min-height: 70vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-card {
+	display: flex;
+	height: 50vh;
+	width: 70vw;
+	gap: 10vw;
+	align-items: center;
 	border-radius: 15px;
 	box-shadow:
 		2px 2px 4px rgba(0, 0, 0, 0.6),
@@ -54,71 +78,118 @@ a:hover {
 }
 
 .main-text {
-	font-size: 3.2vw;
+	margin-left: 10vw;
+	width: 20vw;
 }
 
-.main-text>p {
-	/* margin-left: 30px; */
+.roirepus-text {
+	font-size: 3vw;
+}
+
+.tagline {
 	margin-top: 10px;
-	font-size: 1.6vw;
+	font-size: 1.5vw;
 }
 
-/* .main-img {} */
-/**/
-/**/
-/* .doggo { */
-/* 	border-radius: 50%; */
-/* 	max-width: 15vw; */
-/* 	border: 2px solid #e0e4f0; */
-/* 	box-shadow: */
-/* 		2px 2px 4px rgba(0, 0, 0, 0.6), */
-/* 		-2px -2px 4px rgba(255, 255, 255, 0.03); */
-/* } */
 .main-img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 20vw;
+	margin-right: 10vw;
 }
 
-.doggo {
+.pfp {
 	border-radius: 50%;
 	max-width: 15vw;
-	/* border: 2px solid #e0e4f0; */
-	/* box-shadow: */
-	/* 	2px 2px 4px rgba(0, 0, 0, 0.6), */
-	/* 	-2px -2px 4px rgba(255, 255, 255, 0.03); */
-	object-fit: cover;
 	aspect-ratio: 1/1;
-	margin-right: 5vw;
-	margin-bottom: 2vw;
-	/* This ensures the container is perfectly circular */
+	object-fit: cover;
 }
 
-.footer {
-	margin-top: 15vh;
+/* Footer styles */
+footer {
+	height: 15vh;
 	display: flex;
+	align-items: flex-start;
 	justify-content: center;
 }
 
-.social {
+.social-container {
 	display: flex;
-	gap: 55px;
-	align-items: center;
+	gap: 4vw;
 }
 
 .logo {
+	fill: var(--accent-color);
 	width: 4vw;
 	height: 4vh;
-	fill: "#94e2d5";
-	transition: all 0.3s ease;
-	fill: #94e2d5;
+	transition: fill 0.2s ease, filter 0.2s ease;
 }
 
-/* .logo>path { */
-/* 	fill: #94e2d5; */
-/* } */
-
 .logo:hover {
-	fill: #ffffff;
-	/* filter: drop-shadow(0 0 6px #4f9fff); */
+	fill: var(--hover-color);
+	filter: drop-shadow(0 0 6px var(--glow-color));
+}
+
+@media (max-width: 768px) {
+	.projects {
+		font-size: 3vw;
+	}
+
+	.main-card {
+		height: 40vh;
+		width: 90vw;
+		gap: 5vw;
+	}
+
+	.main-text {
+		margin-left: 5vw;
+		width: 30vw;
+	}
+
+	.main-img {
+		margin-right: 5vw;
+		width: 30vw;
+	}
+
+	.roirepus-text {
+		font-size: 4vw;
+	}
+
+	.tagline {
+		font-size: 2vw;
+	}
+
+	.pfp {
+		max-width: 20vw;
+	}
+
+	.logo {
+		width: 6vw;
+		height: 3vh;
+	}
+}
+
+/* Additional adjustments for very small screens */
+@media (max-width: 480px) {
+	html {
+		overflow-y: auto;
+	}
+
+	.main-card {
+		height: 35vh;
+	}
+
+	.projects {
+		font-size: 3.5vw;
+		gap: 3vw;
+	}
+
+	.roirepus-text {
+		font-size: 5vw;
+	}
+
+	.tagline {
+		font-size: 2.5vw;
+	}
 }
