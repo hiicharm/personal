@@ -176,14 +176,12 @@ footer {
 	.social-container {
 		display: flex;
 		gap: 4vh;
+		overflow-y: hidden;
 	}
 }
 
 /* Additional adjustments for very small screens */
 @media (max-width: 480px) {
-	html {
-		overflow-y: hidden;
-	}
 
 	.main-card {
 		height: 35vh;
@@ -205,5 +203,6 @@ footer {
 	.social-container {
 		display: flex;
 		gap: 4vh;
+		overflow-y: hidden;
 	}
 }
