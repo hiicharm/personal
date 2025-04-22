@@ -143,16 +143,16 @@ footer {
 	.main-card {
 		height: 40vh;
 		width: 90vw;
-		gap: 5vw;
+		gap: 10vw;
 	}
 
 	.main-text {
-		margin-left: 5vw;
+		margin-left: 10vw;
 		width: 30vw;
 	}
 
 	.main-img {
-		margin-right: 5vw;
+		margin-right: 10vw;
 		width: 30vw;
 	}
 
