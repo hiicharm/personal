@@ -132,6 +132,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+	body {
+		overscroll-behavior-y: contain;
+	}
 
 	.projects {
 		font-size: 3vw;
@@ -173,12 +176,15 @@ footer {
 	.social-container {
 		display: flex;
 		gap: 4vh;
-		overflow-y: hidden;
 	}
 }
 
 /* Additional adjustments for very small screens */
 @media (max-width: 480px) {
+
+	body {
+		overscroll-behavior-y: contain;
+	}
 
 	.main-card {
 		height: 35vh;
@@ -200,6 +206,5 @@ footer {
 	.social-container {
 		display: flex;
 		gap: 4vh;
-		overflow-y: hidden;
 	}
 }
